@@ -1,0 +1,15 @@
+{
+  "match_request_id": "e63fa057-8b3a-462e-b257-257d5251ad2b",
+  "total_count": 1,
+  "status": "found",
+  "company": {
+    "name": "Honeypot GmbH",
+    "location": [ "Berlin, Germany" ],
+    "url": "https://www.honeypot.io",
+    "profileUrls": [
+      "https://github.com/honeypotio",
+      "https://linkedin.com/company/honeypot"
+    ],
+    "positions": [ { "name": "ruby" } ]
+  }
+}

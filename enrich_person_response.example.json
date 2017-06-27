@@ -1,0 +1,34 @@
+{
+  "match_request_id": "e63fa057-8b3a-462e-b257-257d5251ad2b",
+  "total_count": 1,
+  "status": "found",
+  "person": {
+    "id": "e78f3057-8b3a-462e-b257-257d5251ad2b",
+    "name": "Hugo Duksis",
+    "email": "hugo@honeypot.io",
+    "profileUrls": [
+      "https://linkedin.com/in/duksis",
+      "https://github.com/duksis",
+      "https://twitter.com/duksis"
+    ],
+    "skills": ["backbone.js", "react.js", "flux"],
+    "experienceEntries": [
+      {
+        "position": "airbaltic",
+        "description": null,
+        "custom_company": "flight support specialist",
+        "technologies": [],
+        "start_year": 2010,
+        "end_year": 2013
+      },
+      {
+        "position": "accenture",
+        "description": null,
+        "custom_company": "web developer",
+        "technologies": [],
+        "start_year": 2015,
+        "end_year": null
+      }
+    ]
+  }
+}

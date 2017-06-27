@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "additionalProperties": false,
+  "definitions": {},
+  "id": "match.schema.json",
+  "properties": {
+    "companyId": {
+      "id": "/properties/companyId",
+      "type": "string"
+    },
+    "personId": {
+      "id": "/properties/personId",
+      "type": "string"
+    },
+    "positionId": {
+      "id": "/properties/positionId",
+      "type": "string"
+    },
+    "score": {
+      "id": "/properties/score",
+      "maximum": 1,
+      "minimum": 0,
+      "type": "number"
+    }
+  },
+  "required": [
+    "personId",
+    "positionId",
+    "score",
+    "companyId"
+  ],
+  "type": "object"
+}

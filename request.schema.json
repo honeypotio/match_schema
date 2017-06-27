@@ -1,0 +1,104 @@
+{
+  "title": "POST /match",
+  "additionalProperties": false,
+  "properties": {
+    "data": {
+    "additionalProperties": false,
+      "properties": {
+        "companies": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "location": {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "name": {
+                "type": "string"
+              },
+              "positions": {
+                "items": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "name"
+                  ],
+                  "type": "object"
+                },
+                "type": "array"
+              },
+              "profileUrls": {
+                "items": {
+                  "type": "string",
+                  "format": "uri"
+                },
+                "type": "array"
+              },
+              "url": {
+                "type": "string",
+                "format": "uri"
+              }
+            },
+            "required": [
+              "url",
+              "profileUrls",
+              "positions",
+              "name",
+              "location"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "people": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "email": {
+                "type": "string",
+                "format": "email"
+              },
+              "name": {
+                "type": "string"
+              },
+              "profileUrls": {
+                "items": {
+                  "type": "string",
+                  "format": "uri"
+                },
+                "type": "array"
+              },
+              "skills": {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              }
+            },
+            "required": [
+              "profileUrls",
+              "email"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "companies",
+        "people"
+      ],
+      "type": "object"
+    }
+  },
+  "required": [
+    "data"
+  ],
+  "type": "object"
+}

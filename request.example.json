@@ -1,0 +1,35 @@
+{
+  "data": {
+    "companies": [
+      {
+        "name": "Honeypot GmbH",
+        "location": ["Berlin, Germany"],
+        "url": "https://www.honeypot.io",
+        "profileUrls": [
+          "https://github.com/honeypotio",
+          "https://linkedin.com/company/honeypot"
+        ],
+        "positions": [
+          {
+            "name": "Ruby Backend Developer"
+          }
+        ]
+      }
+    ],
+    "people": [
+      {
+        "name": "Hugo Duksis",
+        "email": "hugo@honeypot.io",
+        "profileUrls": [
+          "https://linkedin.com/in/duksis",
+          "https://github.com/duksis",
+          "https://twitter.com/duksis"
+        ],
+        "skills": [
+          "Ruby",
+          "Elixir"
+        ]
+      }
+    ]
+  }
+}

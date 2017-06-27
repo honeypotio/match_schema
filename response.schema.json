@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "additionalProperties": false,
+  "definitions": {
+    "company": {
+      "$ref": "file:company.schema.json"
+    },
+    "person": {
+      "$ref": "file:person.schema.json"
+    },
+    "position": {
+      "$ref": "file:position.schema.json"
+    },
+    "match": {
+      "$ref": "file:match.schema.json"
+    }
+  },
+  "id": "response.schema.json",
+  "properties": {
+    "data": {
+      "additionalProperties": false,
+      "properties": {
+        "companies": {
+          "additionalItems": false,
+          "items": {
+            "$ref": "#/definitions/company"
+          },
+          "type": "array"
+        },
+        "people": {
+          "items": {
+            "$ref": "#/definitions/person"
+          },
+          "type": "array"
+        },
+        "positions": {
+          "additionalItems": false,
+          "items": {
+            "$ref": "#/definitions/position"
+          },
+          "type": "array"
+        },
+        "results": {
+          "items": {
+            "$ref": "#/definitions/match"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "positions",
+        "companies",
+        "people"
+      ],
+      "type": "object"
+    },
+    "id": {
+      "default": "e63fa057-8b3a-462e-b257-257d5251ad2b",
+      "id": "/properties/id",
+      "type": "string"
+    },
+    "status": {
+      "default": "fulfilled",
+      "id": "/properties/status",
+      "type": "string"
+    }
+  },
+  "required": [
+    "data"
+  ],
+  "type": "object"
+}
