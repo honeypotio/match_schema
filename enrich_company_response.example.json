@@ -10,6 +10,11 @@
       "https://github.com/honeypotio",
       "https://linkedin.com/company/honeypot"
     ],
-    "positions": [ { "name": "ruby" } ]
+    "positions": [
+      {
+        "name": "ruby",
+        "description": "4+ years experience with Ruby on Rails and API's"
+      }
+    ]
   }
 }
