@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "additionalProperties": false,
+  "definitions": {},
+  "id": "feedback.json",
+  "properties": {
+    "data": {
+      "additionalProperties": false,
+      "id": "/properties/data",
+      "properties": {
+        "comment": {
+          "id": "/properties/data/properties/comment",
+          "type": "string"
+        },
+        "companyId": {
+          "id": "/properties/data/properties/companyId",
+          "type": "string"
+        },
+        "personId": {
+          "id": "/properties/data/properties/personId",
+          "type": "string"
+        },
+        "positionId": {
+          "id": "/properties/data/properties/positionId",
+          "type": "string"
+        },
+        "requestId": {
+          "id": "/properties/data/properties/requestId",
+          "type": "string"
+        },
+        "value": {
+          "id": "/properties/data/properties/value",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "positionId",
+        "companyId",
+        "personId",
+        "value",
+        "requestId"
+      ],
+      "type": "object"
+    }
+  },
+  "required": [
+    "data"
+  ],
+  "type": "object"
+}
