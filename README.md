@@ -3,6 +3,14 @@
 [![Build Status](https://travis-ci.org/honeypotio/match_schema.svg?branch=master)](https://travis-ci.org/honeypotio/match_schema)
  collection of match contracts for workers and api
 
+## Releasing
+
+* do the changes necessary
+* verify tests bass `./test`
+* commit changes
+* create new version `npm version patch`
+* push `git push --follow-tag`
+
 ## Usage
 
 TODO:
