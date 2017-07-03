@@ -6,7 +6,7 @@
 ## Releasing
 
 * do the changes necessary
-* verify tests bass `./test`
+* verify tests pass `./test`
 * commit changes
 * create new version `npm version patch`
 * push `git push --follow-tag`
