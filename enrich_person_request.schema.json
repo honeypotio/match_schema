@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "additionalProperties": false,
+  "definitions": {
+    "person": {
+      "$ref": "file:person.schema.json"
+    }
+  },
+  "id": "enrich_person_request.schema.json",
+  "properties": {
+    "person": {
+      "$ref": "#/definitions/person"
+    },
+    "match_request_id": {
+      "default": "e63fa057-8b3a-462e-b257-257d5251ad2b",
+      "id": "/properties/match_request_id",
+      "type": "string"
+    },
+    "total_count": {
+      "id": "/properties/total_count",
+      "type": "number"
+    }
+  },
+  "required": [
+    "person", "total_count", "match_request_id"
+  ],
+  "type": "object"
+}
