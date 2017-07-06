@@ -56,6 +56,9 @@
       "id": "/properties/id",
       "type": "string"
     },
+    "refId": {
+      "type": ["integer", "string"]
+    },
     "name": {
       "id": "/properties/name",
       "type": "string"

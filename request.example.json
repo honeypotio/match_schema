@@ -11,6 +11,7 @@
         ],
         "positions": [
           {
+            "refId": "optional reference id",
             "name": "Ruby Backend Developer",
             "description": "4+ years experience with Ruby on Rails and API's"
           }
@@ -19,6 +20,7 @@
     ],
     "people": [
       {
+        "refId": "optional reference id",
         "name": "Hugo Duksis",
         "email": "hugo@honeypot.io",
         "profileUrls": [

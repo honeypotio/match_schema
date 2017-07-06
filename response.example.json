@@ -1,7 +1,7 @@
 {
   "id": "e63fa057-8b3a-462e-b257-257d5251ad2b",
   "status": "fulfilled",
-  "data":{
+  "data": {
     "results": [
       {
         "score": 0.0396696499,
@@ -10,9 +10,10 @@
         "companyId": "1277b341ec69285d439f4321544497bb"
       }
     ],
-    "people":[
+    "people": [
       {
         "id": "e78f3057-8b3a-462e-b257-257d5251ad2b",
+        "refId": "optional reference id",
         "name": "Hugo Duksis",
         "email": "hugo@honeypot.io",
         "profileUrls": [
@@ -41,14 +42,15 @@
         ]
       }
     ],
-    "positions":[
+    "positions": [
       {
         "id": "ba2383dbba375cebb69c3d7fafd05c29",
+        "refId": "optional reference id",
         "name": "ruby",
         "description": "4+ years experience with Ruby on Rails and API's"
       }
     ],
-    "companies":[
+    "companies": [
       {
         "id": "1277b341ec69285d439f4321544497bb",
         "name": "Honeypot GmbH",
