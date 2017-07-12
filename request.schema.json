@@ -83,6 +83,10 @@
                 },
                 "type": "array"
               },
+              "resumeUrl": {
+                "type": "string",
+                "format": "uri"
+              },
               "skills": {
                 "items": {
                   "type": "string"
