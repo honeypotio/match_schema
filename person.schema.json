@@ -63,6 +63,10 @@
       "id": "/properties/name",
       "type": "string"
     },
+    "summary": {
+      "id": "/properties/summary",
+      "type": "string"
+    },
     "resumeUrl": {
       "type": "string",
       "format": "uri"

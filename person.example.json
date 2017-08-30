@@ -1,17 +1,13 @@
 {
-  "match_request_id": "e63fa057-8b3a-462e-b257-257d5251ad2b",
-  "total_count": 1,
-  "status": "found",
-  "person": {
-    "id": "e78f3057-8b3a-462e-b257-257d5251ad2b",
-    "refId": "optional reference id",
-    "name": "Hugo Duksis",
-    "summary": "Experienced developer interested in functional programming",
-    "email": "hugo@honeypot.io",
-    "profileUrls": [
-      "https://linkedin.com/in/duksis",
-      "https://github.com/duksis",
-      "https://twitter.com/duksis"
+  "id": "e78f3057-8b3a-462e-b257-257d5251ad2b",
+  "refId": "optional reference id",
+  "name": "Hugo Duksis",
+  "summary": "Experienced developer interested in functional programming",
+  "email": "hugo@honeypot.io",
+  "profileUrls": [
+    "https://linkedin.com/in/duksis",
+    "https://github.com/duksis",
+    "https://twitter.com/duksis"
     ],
     "resumeUrl": "https://www.dropbox.com/s/pynm2ro69m51i98/HugoDuksisProfile.pdf?dl=1",
     "skills": ["backbone.js", "react.js", "flux"],
@@ -33,5 +29,4 @@
         "end_year": null
       }
     ]
-  }
 }
