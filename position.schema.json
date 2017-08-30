@@ -18,6 +18,14 @@
     "name": {
       "id": "/properties/name",
       "type": "string"
+    },
+    "technologies": {
+      "id": "/properties/technologies",
+      "items": {
+        "id": "/properties/technologies/items",
+        "type": "string"
+      },
+      "type": "array"
     }
   },
   "required": [
