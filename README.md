@@ -1,7 +1,8 @@
 # match_schema
 
-[![Build Status](https://travis-ci.org/honeypotio/match_schema.svg?branch=master)](https://travis-ci.org/honeypotio/match_schema)
- collection of match contracts for workers and api
+[![Build Status](https://travis-ci.org/mindmatch/match_schema.svg?branch=master)](https://travis-ci.org/mindmatch/match_schema)
+
+> Collection of match contracts for workers and api
 
 ## Releasing
 
