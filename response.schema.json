@@ -17,42 +17,31 @@
   },
   "id": "response.schema.json",
   "properties": {
-    "data": {
-      "additionalProperties": false,
-      "properties": {
-        "companies": {
-          "additionalItems": false,
-          "items": {
-            "$ref": "#/definitions/company"
-          },
-          "type": "array"
-        },
-        "people": {
-          "items": {
-            "$ref": "#/definitions/person"
-          },
-          "type": "array"
-        },
-        "positions": {
-          "additionalItems": false,
-          "items": {
-            "$ref": "#/definitions/position"
-          },
-          "type": "array"
-        },
-        "results": {
-          "items": {
-            "$ref": "#/definitions/match"
-          },
-          "type": "array"
-        }
+    "companies": {
+      "additionalItems": false,
+      "items": {
+        "$ref": "#/definitions/company"
       },
-      "required": [
-        "positions",
-        "companies",
-        "people"
-      ],
-      "type": "object"
+      "type": "array"
+    },
+    "people": {
+      "items": {
+        "$ref": "#/definitions/person"
+      },
+      "type": "array"
+    },
+    "positions": {
+      "additionalItems": false,
+      "items": {
+        "$ref": "#/definitions/position"
+      },
+      "type": "array"
+    },
+    "results": {
+      "items": {
+        "$ref": "#/definitions/match"
+      },
+      "type": "array"
     },
     "id": {
       "default": "e63fa057-8b3a-462e-b257-257d5251ad2b",
@@ -66,7 +55,9 @@
     }
   },
   "required": [
-    "data"
+    "positions",
+    "companies",
+    "people"
   ],
   "type": "object"
 }
