@@ -1,6 +1,11 @@
 {
   "title": "POST /match",
   "additionalProperties": false,
+  "definitions": {
+    "person": {
+      "$ref": "file:person.schema.json"
+    }
+  },
   "properties": {
     "data": {
     "additionalProperties": false,
@@ -64,41 +69,7 @@
         },
         "people": {
           "items": {
-            "additionalProperties": false,
-            "properties": {
-              "refId": {
-                "type": ["integer", "string"]
-              },
-              "name": {
-                "type": "string"
-              },
-              "email": {
-                "type": "string",
-                "format": "email"
-              },
-              "profileUrls": {
-                "items": {
-                  "type": "string",
-                  "format": "uri"
-                },
-                "type": "array"
-              },
-              "resumeUrl": {
-                "type": "string",
-                "format": "uri"
-              },
-              "skills": {
-                "items": {
-                  "type": "string"
-                },
-                "type": "array"
-              }
-            },
-            "required": [
-              "email",
-              "profileUrls"
-            ],
-            "type": "object"
+            "$ref": "#/definitions/person"
           },
           "type": "array"
         }
