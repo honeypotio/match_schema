@@ -18,4 +18,4 @@ TODO:
 
 ## License
 
-Copyright © 2017 Honeypot GmbH. All rights reserved.
+Copyright © 2017 MindMatch GmbH. All rights reserved.
