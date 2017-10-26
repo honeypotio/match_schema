@@ -63,6 +63,10 @@
       "id": "/properties/name",
       "type": "string"
     },
+    "location": {
+      "id": "/properties/location",
+      "type": "string"
+    },
     "summary": {
       "id": "/properties/summary",
       "type": "string"
