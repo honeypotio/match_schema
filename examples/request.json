@@ -33,6 +33,15 @@
         "skills": [
           "Ruby",
           "Elixir"
+        ],
+        "educationEntries":[
+          {
+            "school_name": "TU Berlin",
+            "degree": "Bachelor's Degree",
+            "discipline": "Computer Science",
+            "start_year": 2003,
+            "end_year": 2006
+          }
         ]
       }
     ]
