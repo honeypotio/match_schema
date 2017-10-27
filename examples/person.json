@@ -9,25 +9,34 @@
     "https://linkedin.com/in/duksis",
     "https://github.com/duksis",
     "https://twitter.com/duksis"
-    ],
-    "resumeUrl": "https://www.dropbox.com/s/pynm2ro69m51i98/HugoDuksisProfile.pdf?dl=1",
-    "skills": ["backbone.js", "react.js", "flux"],
-    "experienceEntries": [
-      {
-        "position": "airbaltic",
-        "description": null,
-        "custom_company": "flight support specialist",
-        "technologies": [],
-        "start_year": 2010,
-        "end_year": 2013
-      },
-      {
-        "position": "accenture",
-        "description": null,
-        "custom_company": "web developer",
-        "technologies": [],
-        "start_year": 2015,
-        "end_year": null
-      }
-    ]
+  ],
+  "resumeUrl": "https://www.dropbox.com/s/pynm2ro69m51i98/HugoDuksisProfile.pdf?dl=1",
+  "skills": ["backbone.js", "react.js", "flux"],
+  "experienceEntries": [
+    {
+      "position": "flight support specialist",
+      "description": null,
+      "custom_company": "airbaltic",
+      "technologies": [],
+      "start_year": 2010,
+      "end_year": 2013
+    },
+    {
+      "position": "web developer",
+      "description": null,
+      "custom_company": "accenture",
+      "technologies": [],
+      "start_year": 2015,
+      "end_year": null
+    }
+  ],
+  "educationEntries":[
+    {
+      "school_name": "TU Berlin",
+      "degree": "Bachelor's Degree",
+      "discipline": "Computer Science",
+      "start_year": 2003,
+      "end_year": 2006
+    }
+  ]
 }
