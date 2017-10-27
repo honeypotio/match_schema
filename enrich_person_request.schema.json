@@ -58,6 +58,44 @@
           },
           "type": "array"
         },
+        "educationEntries": {
+          "additionalItems": false,
+          "id": "/properties/educationEntries",
+          "items": {
+            "additionalProperties": false,
+            "id": "/properties/educationEntries/items",
+            "properties": {
+              "school_name": {
+                "id": "/properties/educationEntries/items/properties/school_name",
+                "type": "string"
+              },
+              "degree": {
+                "id": "/properties/educationEntries/items/properties/degree",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "start_year": {
+                "id": "/properties/educationEntries/items/properties/start_year",
+                "type": "integer"
+              },
+              "end_year": {
+                "id": "/properties/educationEntries/items/properties/end_year",
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "discipline": {
+                "id": "/properties/educationEntries/items/properties/discipline",
+                "type": "string"
+              }
+            },
+            "type": "object"
+          },
+          "type": "array"
+        },
         "id": {
           "id": "/properties/id",
           "type": "string"

@@ -2,6 +2,201 @@
   "title": "POST /match",
   "additionalProperties": false,
   "definitions": {
+    "person": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "additionalProperties": false,
+      "definitions": {
+      },
+      "id": "person.schema.json",
+      "properties": {
+        "email": {
+          "id": "/properties/email",
+          "type": "string"
+        },
+        "experienceEntries": {
+          "additionalItems": false,
+          "id": "/properties/experienceEntries",
+          "items": {
+            "additionalProperties": false,
+            "id": "/properties/experienceEntries/items",
+            "properties": {
+              "custom_company": {
+                "id": "/properties/experienceEntries/items/properties/custom_company",
+                "type": "string"
+              },
+              "description": {
+                "id": "/properties/experienceEntries/items/properties/description",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "end_year": {
+                "id": "/properties/experienceEntries/items/properties/end_year",
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "position": {
+                "id": "/properties/experienceEntries/items/properties/position",
+                "type": "string"
+              },
+              "start_year": {
+                "id": "/properties/experienceEntries/items/properties/start_year",
+                "type": "integer"
+              },
+              "technologies": {
+                "additionalItems": false,
+                "id": "/properties/experienceEntries/items/properties/technologies",
+                "items": {
+                },
+                "type": "array"
+              }
+            },
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "educationEntries": {
+          "additionalItems": false,
+          "id": "/properties/educationEntries",
+          "items": {
+            "additionalProperties": false,
+            "id": "/properties/educationEntries/items",
+            "properties": {
+              "school_name": {
+                "id": "/properties/educationEntries/items/properties/school_name",
+                "type": "string"
+              },
+              "degree": {
+                "id": "/properties/educationEntries/items/properties/degree",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "start_year": {
+                "id": "/properties/educationEntries/items/properties/start_year",
+                "type": "integer"
+              },
+              "end_year": {
+                "id": "/properties/educationEntries/items/properties/end_year",
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "discipline": {
+                "id": "/properties/educationEntries/items/properties/discipline",
+                "type": "string"
+              }
+            },
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "id": {
+          "id": "/properties/id",
+          "type": "string"
+        },
+        "refId": {
+          "type": [
+            "integer",
+            "string"
+          ]
+        },
+        "name": {
+          "id": "/properties/name",
+          "type": "string"
+        },
+        "location": {
+          "id": "/properties/location",
+          "type": "string"
+        },
+        "summary": {
+          "id": "/properties/summary",
+          "type": "string"
+        },
+        "resumeUrl": {
+          "type": "string",
+          "format": "uri"
+        },
+        "profileUrls": {
+          "additionalItems": false,
+          "id": "/properties/profileUrls",
+          "items": {
+            "id": "/properties/profileUrls/items",
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "skills": {
+          "additionalItems": false,
+          "id": "/properties/skills",
+          "items": {
+            "id": "/properties/skills/items",
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "name"
+      ],
+      "type": "object"
+    },
+    "company": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "additionalProperties": false,
+      "definitions": {
+      },
+      "id": "company.schema.json",
+      "properties": {
+        "id": {
+          "id": "/properties/id",
+          "type": "string"
+        },
+        "location": {
+          "additionalItems": false,
+          "id": "/properties/location",
+          "items": {
+            "id": "/properties/location/items",
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "name": {
+          "id": "/properties/name",
+          "type": "string"
+        },
+        "profileUrls": {
+          "additionalItems": false,
+          "id": "/properties/profileUrls",
+          "items": {
+            "id": "/properties/profileUrls/items",
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "url": {
+          "id": "/properties/url",
+          "type": "string"
+        },
+        "positions": {
+          "id": "/properties/positions",
+          "items": {
+            "id": "/properties/positions/items",
+            "type": "object"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "name"
+      ],
+      "type": "object"
+    }
   },
   "properties": {
     "data": {
@@ -9,161 +204,13 @@
       "properties": {
         "companies": {
           "items": {
-            "additionalProperties": false,
-            "properties": {
-              "location": {
-                "items": {
-                  "type": "string"
-                },
-                "type": "array"
-              },
-              "name": {
-                "type": "string"
-              },
-              "positions": {
-                "items": {
-                  "additionalProperties": false,
-                  "properties": {
-                    "refId": {
-                      "type": [
-                        "integer",
-                        "string"
-                      ]
-                    },
-                    "name": {
-                      "type": "string"
-                    },
-                    "description": {
-                      "type": "string"
-                    }
-                  },
-                  "required": [
-                    "name"
-                  ],
-                  "type": "object"
-                },
-                "type": "array"
-              },
-              "profileUrls": {
-                "items": {
-                  "type": "string",
-                  "format": "uri"
-                },
-                "type": "array"
-              },
-              "url": {
-                "type": "string",
-                "format": "uri"
-              }
-            },
-            "required": [
-              "url",
-              "profileUrls",
-              "positions",
-              "name",
-              "location"
-            ],
-            "type": "object"
+            "$ref": "#/definitions/company"
           },
           "type": "array"
         },
         "people": {
           "items": {
-            "properties": {
-              "email": {
-                "id": "/properties/email",
-                "type": "string"
-              },
-              "experienceEntries": {
-                "additionalItems": false,
-                "id": "/properties/experienceEntries",
-                "items": {
-                  "additionalProperties": false,
-                  "id": "/properties/experienceEntries/items",
-                  "properties": {
-                    "custom_company": {
-                      "id": "/properties/experienceEntries/items/properties/custom_company",
-                      "type": "string"
-                    },
-                    "description": {
-                      "id": "/properties/experienceEntries/items/properties/description",
-                      "type": [
-                        "string",
-                        "null"
-                      ]
-                    },
-                    "end_year": {
-                      "id": "/properties/experienceEntries/items/properties/end_year",
-                      "type": [
-                        "integer",
-                        "null"
-                      ]
-                    },
-                    "position": {
-                      "id": "/properties/experienceEntries/items/properties/position",
-                      "type": "string"
-                    },
-                    "start_year": {
-                      "id": "/properties/experienceEntries/items/properties/start_year",
-                      "type": "integer"
-                    },
-                    "technologies": {
-                      "additionalItems": false,
-                      "id": "/properties/experienceEntries/items/properties/technologies",
-                      "items": {
-                      },
-                      "type": "array"
-                    }
-                  },
-                  "type": "object"
-                },
-                "type": "array"
-              },
-              "id": {
-                "id": "/properties/id",
-                "type": "string"
-              },
-              "refId": {
-                "type": [
-                  "integer",
-                  "string"
-                ]
-              },
-              "name": {
-                "id": "/properties/name",
-                "type": "string"
-              },
-              "summary": {
-                "id": "/properties/summary",
-                "type": "string"
-              },
-              "resumeUrl": {
-                "type": "string",
-                "format": "uri"
-              },
-              "profileUrls": {
-                "additionalItems": false,
-                "id": "/properties/profileUrls",
-                "items": {
-                  "id": "/properties/profileUrls/items",
-                  "type": "string"
-                },
-                "type": "array"
-              },
-              "skills": {
-                "additionalItems": false,
-                "id": "/properties/skills",
-                "items": {
-                  "id": "/properties/skills/items",
-                  "type": "string"
-                },
-                "type": "array"
-              }
-            },
-            "required": [
-              "name"
-            ],
-            "type": "object"
+            "$ref": "#/definitions/person"
           },
           "type": "array"
         }
