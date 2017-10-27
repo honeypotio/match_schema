@@ -1,8 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "additionalProperties": false,
-  "definitions": {
-  },
+  "definitions": {},
   "id": "person.schema.json",
   "properties": {
     "email": {
@@ -45,8 +44,7 @@
           "technologies": {
             "additionalItems": false,
             "id": "/properties/experienceEntries/items/properties/technologies",
-            "items": {
-            },
+            "items": {},
             "type": "array"
           }
         },
@@ -59,10 +57,7 @@
       "type": "string"
     },
     "refId": {
-      "type": [
-        "integer",
-        "string"
-      ]
+      "type": ["integer", "string"]
     },
     "name": {
       "id": "/properties/name",

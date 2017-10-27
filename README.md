@@ -4,9 +4,19 @@
 
 > Collection of match contracts for workers and api
 
+## Development
+
+To set up environment:
+```
+virtualenv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
 ## Releasing
 
-* do the changes necessary
+* do the changes necessary in `schemas` and `examples` files
+* generate file derefed schema files with `./scripts/compile`
 * verify tests pass `./test`
 * commit changes
 * create new version `npm version patch`

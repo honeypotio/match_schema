@@ -3,7 +3,110 @@
   "additionalProperties": false,
   "definitions": {
     "person": {
-      "$ref": "file:person.schema.json"
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "additionalProperties": false,
+      "definitions": {
+      },
+      "id": "person.schema.json",
+      "properties": {
+        "email": {
+          "id": "/properties/email",
+          "type": "string"
+        },
+        "experienceEntries": {
+          "additionalItems": false,
+          "id": "/properties/experienceEntries",
+          "items": {
+            "additionalProperties": false,
+            "id": "/properties/experienceEntries/items",
+            "properties": {
+              "custom_company": {
+                "id": "/properties/experienceEntries/items/properties/custom_company",
+                "type": "string"
+              },
+              "description": {
+                "id": "/properties/experienceEntries/items/properties/description",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "end_year": {
+                "id": "/properties/experienceEntries/items/properties/end_year",
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "position": {
+                "id": "/properties/experienceEntries/items/properties/position",
+                "type": "string"
+              },
+              "start_year": {
+                "id": "/properties/experienceEntries/items/properties/start_year",
+                "type": "integer"
+              },
+              "technologies": {
+                "additionalItems": false,
+                "id": "/properties/experienceEntries/items/properties/technologies",
+                "items": {
+                },
+                "type": "array"
+              }
+            },
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "id": {
+          "id": "/properties/id",
+          "type": "string"
+        },
+        "refId": {
+          "type": [
+            "integer",
+            "string"
+          ]
+        },
+        "name": {
+          "id": "/properties/name",
+          "type": "string"
+        },
+        "location": {
+          "id": "/properties/location",
+          "type": "string"
+        },
+        "summary": {
+          "id": "/properties/summary",
+          "type": "string"
+        },
+        "resumeUrl": {
+          "type": "string",
+          "format": "uri"
+        },
+        "profileUrls": {
+          "additionalItems": false,
+          "id": "/properties/profileUrls",
+          "items": {
+            "id": "/properties/profileUrls/items",
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "skills": {
+          "additionalItems": false,
+          "id": "/properties/skills",
+          "items": {
+            "id": "/properties/skills/items",
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "name"
+      ],
+      "type": "object"
     }
   },
   "id": "enrich_person_response.schema.json",
@@ -27,7 +130,10 @@
     }
   },
   "required": [
-    "person", "status", "total_count", "match_request_id"
+    "person",
+    "status",
+    "total_count",
+    "match_request_id"
   ],
   "type": "object"
 }

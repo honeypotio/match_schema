@@ -2,10 +2,11 @@
   "title": "POST /match",
   "additionalProperties": false,
   "definitions": {
+    "person": {"$ref": "file:schemas/person.json"}
   },
   "properties": {
     "data": {
-      "additionalProperties": false,
+    "additionalProperties": false,
       "properties": {
         "companies": {
           "items": {
@@ -25,10 +26,7 @@
                   "additionalProperties": false,
                   "properties": {
                     "refId": {
-                      "type": [
-                        "integer",
-                        "string"
-                      ]
+                      "type": ["integer", "string"]
                     },
                     "name": {
                       "type": "string"
@@ -110,8 +108,7 @@
                     "technologies": {
                       "additionalItems": false,
                       "id": "/properties/experienceEntries/items/properties/technologies",
-                      "items": {
-                      },
+                      "items": {},
                       "type": "array"
                     }
                   },
@@ -124,10 +121,7 @@
                 "type": "string"
               },
               "refId": {
-                "type": [
-                  "integer",
-                  "string"
-                ]
+                "type": ["integer", "string"]
               },
               "name": {
                 "id": "/properties/name",

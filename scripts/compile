@@ -1,0 +1,11 @@
+#!/bin/bash
+
+_exit=0
+for example_file in $(ls -1 schemas/)
+do
+  echo "./scripts/deref schemas/$example_file > ${example_file/.json/.schema.json}"
+  ./scripts/deref schemas/$example_file > ${example_file/.json/.schema.json}
+  [ $? != 0 ] && _exit=1
+done
+
+exit $_exit

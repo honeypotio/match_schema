@@ -2,7 +2,7 @@
 [ ! -x "$(command -v jsonschema)" ] && pip3 install jsonschema
 
 _exit=0
-for example_file in $(ls -1 *.example.json)
+for example_file in $(ls -1 examples/*.json)
 do
   echo "jsonschema -i $example_file ${example_file/example/schema}"
   jsonschema -i $example_file ${example_file/example/schema}

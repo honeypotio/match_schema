@@ -3,7 +3,55 @@
   "additionalProperties": false,
   "definitions": {
     "company": {
-      "$ref": "file:company.schema.json"
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "additionalProperties": false,
+      "definitions": {
+      },
+      "id": "company.schema.json",
+      "properties": {
+        "id": {
+          "id": "/properties/id",
+          "type": "string"
+        },
+        "location": {
+          "additionalItems": false,
+          "id": "/properties/location",
+          "items": {
+            "id": "/properties/location/items",
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "name": {
+          "id": "/properties/name",
+          "type": "string"
+        },
+        "profileUrls": {
+          "additionalItems": false,
+          "id": "/properties/profileUrls",
+          "items": {
+            "id": "/properties/profileUrls/items",
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "url": {
+          "id": "/properties/url",
+          "type": "string"
+        },
+        "positions": {
+          "id": "/properties/positions",
+          "items": {
+            "id": "/properties/positions/items",
+            "type": "object"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "name"
+      ],
+      "type": "object"
     }
   },
   "id": "enrich_company_response.schema.json",
@@ -27,7 +75,10 @@
     }
   },
   "required": [
-    "company", "status", "total_count", "match_request_id"
+    "company",
+    "status",
+    "total_count",
+    "match_request_id"
   ],
   "type": "object"
 }

@@ -1,7 +1,6 @@
 {
   "additionalProperties": false,
-  "definitions": {
-  },
+  "definitions": {},
   "id": "feedback.json",
   "properties": {
     "data": {

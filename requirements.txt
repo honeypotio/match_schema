@@ -1,0 +1,3 @@
+functools32==3.2.3.post2
+jsonref==0.1
+jsonschema==2.6.0

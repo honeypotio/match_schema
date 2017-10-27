@@ -1,0 +1,55 @@
+#!/usr/bin/ruby
+
+require 'json'
+
+if ARGV.size != 1
+  STDERR.puts("Usage: #{__FILE__} path/to/jsonschema.json")
+  exit 0
+end
+
+schema_file = ARGV.first
+schema = JSON.parse(File.read(schema_file))
+
+def deref(schema, cache, scopes)
+  return schema unless schema.respond_to?(:keys)
+  #if schema.keys.include?('$ref')
+  if schema.keys.include?('$ref') && schema['$ref'].start_with?('file:')
+    resolved = resolve(schema['$ref'], cache, scopes)
+    deref_resolved = deref(resolved.dup, cache, scopes + [resolved])
+    cache[schema['$ref']] = deref_resolved
+    return deref_resolved
+  else
+    schema.each do |key, value|
+      schema[key] = deref(value, cache, scopes)
+    end
+  end
+  schema
+end
+
+def resolve(ref, cache, scopes)
+  return cache[ref] if cache.keys.include?(ref)
+  if ref.start_with?('file:')
+    return JSON.parse(File.read(ref.split(':').last))
+  elsif ref.start_with?('#/')
+    resolved = scopes.inject({}) do |obj, scope|
+      local = dig(scope, *ref.split('/')[1..-1])
+      local ? local : obj
+    end
+    return resolved
+  else
+    raise "Sorry dude! I don't have any F**king clue how to resolve #{ref}"
+  end
+end
+
+def dig(hash, *args)
+  to_cache = if hash.respond_to?(:dig)
+    hash.dig(*args)
+  else
+    args.inject(hash.dup) do |json, key|
+      json.is_a?(Hash) ? json[key] : nil
+    end
+  end
+end
+
+response = deref(schema, {}, [schema])
+STDOUT.puts JSON.pretty_generate(response)

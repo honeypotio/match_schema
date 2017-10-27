@@ -3,16 +3,234 @@
   "additionalProperties": false,
   "definitions": {
     "company": {
-      "$ref": "file:company.schema.json"
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "additionalProperties": false,
+      "definitions": {
+      },
+      "id": "company.schema.json",
+      "properties": {
+        "id": {
+          "id": "/properties/id",
+          "type": "string"
+        },
+        "location": {
+          "additionalItems": false,
+          "id": "/properties/location",
+          "items": {
+            "id": "/properties/location/items",
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "name": {
+          "id": "/properties/name",
+          "type": "string"
+        },
+        "profileUrls": {
+          "additionalItems": false,
+          "id": "/properties/profileUrls",
+          "items": {
+            "id": "/properties/profileUrls/items",
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "url": {
+          "id": "/properties/url",
+          "type": "string"
+        },
+        "positions": {
+          "id": "/properties/positions",
+          "items": {
+            "id": "/properties/positions/items",
+            "type": "object"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "name"
+      ],
+      "type": "object"
     },
     "person": {
-      "$ref": "file:person.schema.json"
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "additionalProperties": false,
+      "definitions": {
+      },
+      "id": "person.schema.json",
+      "properties": {
+        "email": {
+          "id": "/properties/email",
+          "type": "string"
+        },
+        "experienceEntries": {
+          "additionalItems": false,
+          "id": "/properties/experienceEntries",
+          "items": {
+            "additionalProperties": false,
+            "id": "/properties/experienceEntries/items",
+            "properties": {
+              "custom_company": {
+                "id": "/properties/experienceEntries/items/properties/custom_company",
+                "type": "string"
+              },
+              "description": {
+                "id": "/properties/experienceEntries/items/properties/description",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "end_year": {
+                "id": "/properties/experienceEntries/items/properties/end_year",
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "position": {
+                "id": "/properties/experienceEntries/items/properties/position",
+                "type": "string"
+              },
+              "start_year": {
+                "id": "/properties/experienceEntries/items/properties/start_year",
+                "type": "integer"
+              },
+              "technologies": {
+                "additionalItems": false,
+                "id": "/properties/experienceEntries/items/properties/technologies",
+                "items": {
+                },
+                "type": "array"
+              }
+            },
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "id": {
+          "id": "/properties/id",
+          "type": "string"
+        },
+        "refId": {
+          "type": [
+            "integer",
+            "string"
+          ]
+        },
+        "name": {
+          "id": "/properties/name",
+          "type": "string"
+        },
+        "location": {
+          "id": "/properties/location",
+          "type": "string"
+        },
+        "summary": {
+          "id": "/properties/summary",
+          "type": "string"
+        },
+        "resumeUrl": {
+          "type": "string",
+          "format": "uri"
+        },
+        "profileUrls": {
+          "additionalItems": false,
+          "id": "/properties/profileUrls",
+          "items": {
+            "id": "/properties/profileUrls/items",
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "skills": {
+          "additionalItems": false,
+          "id": "/properties/skills",
+          "items": {
+            "id": "/properties/skills/items",
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "name"
+      ],
+      "type": "object"
     },
     "position": {
-      "$ref": "file:position.schema.json"
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "additionalProperties": false,
+      "definitions": {
+      },
+      "id": "position.schema.json",
+      "properties": {
+        "description": {
+          "id": "/properties/description",
+          "type": "string"
+        },
+        "id": {
+          "id": "/properties/id",
+          "type": "string"
+        },
+        "refId": {
+          "type": [
+            "integer",
+            "string"
+          ]
+        },
+        "name": {
+          "id": "/properties/name",
+          "type": "string"
+        },
+        "technologies": {
+          "id": "/properties/technologies",
+          "items": {
+            "id": "/properties/technologies/items",
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "name"
+      ],
+      "type": "object"
     },
     "match": {
-      "$ref": "file:match.schema.json"
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "additionalProperties": false,
+      "definitions": {
+      },
+      "id": "match.schema.json",
+      "properties": {
+        "companyId": {
+          "id": "/properties/companyId",
+          "type": "string"
+        },
+        "personId": {
+          "id": "/properties/personId",
+          "type": "string"
+        },
+        "positionId": {
+          "id": "/properties/positionId",
+          "type": "string"
+        },
+        "score": {
+          "id": "/properties/score",
+          "maximum": 1,
+          "minimum": 0,
+          "type": "number"
+        }
+      },
+      "required": [
+        "personId",
+        "positionId",
+        "score",
+        "companyId"
+      ],
+      "type": "object"
     }
   },
   "id": "response.schema.json",
