@@ -16,12 +16,12 @@
       "name": "Hugo Duksis",
       "summary": "Experienced developer interested in functional programming",
       "email": "hugo@honeypot.io",
-      "resumeUrl": "https://www.dropbox.com/s/pynm2ro69m51i98/HugoDuksisProfile.pdf?dl=1",
       "profileUrls": [
         "https://linkedin.com/in/duksis",
         "https://github.com/duksis",
         "https://twitter.com/duksis"
       ],
+      "resumeUrl": "https://www.dropbox.com/s/pynm2ro69m51i98/HugoDuksisProfile.pdf?dl=1",
       "skills": ["backbone.js", "react.js", "flux"],
       "experienceEntries": [
         {
