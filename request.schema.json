@@ -199,31 +199,22 @@
     }
   },
   "properties": {
-    "data": {
-      "additionalProperties": false,
-      "properties": {
-        "companies": {
-          "items": {
-            "$ref": "#/definitions/company"
-          },
-          "type": "array"
-        },
-        "people": {
-          "items": {
-            "$ref": "#/definitions/person"
-          },
-          "type": "array"
-        }
+    "companies": {
+      "items": {
+        "$ref": "#/definitions/company"
       },
-      "required": [
-        "companies",
-        "people"
-      ],
-      "type": "object"
+      "type": "array"
+    },
+    "people": {
+      "items": {
+        "$ref": "#/definitions/person"
+      },
+      "type": "array"
     }
   },
   "required": [
-    "data"
+    "companies",
+    "people"
   ],
   "type": "object"
 }
