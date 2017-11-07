@@ -21,6 +21,12 @@
       "maximum": 1,
       "minimum": 0,
       "type": "number"
+    },
+    "personKeywords": {
+      "type": "object"
+    },
+    "positionKeywords": {
+      "type": "object"
     }
   },
   "required": [
