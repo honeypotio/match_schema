@@ -190,6 +190,43 @@
             "type": "string"
           },
           "type": "array"
+        },
+        "publicActivity": {
+          "additionalProperties": false,
+          "id": "/properties/publicActivity",
+          "properties": {
+            "github": {
+              "additionalProperties": false,
+              "properties": {
+                "followerCount": {
+                  "type": "number"
+                },
+                "starCount": {
+                  "type": "number"
+                }
+              },
+              "type": "object"
+            },
+            "twitter": {
+              "additionalProperties": false,
+              "properties": {
+                "followerCount": {
+                  "type": "number"
+                }
+              },
+              "type": "object"
+            },
+            "stackoverflow": {
+              "additionalProperties": false,
+              "properties": {
+                "reputation": {
+                  "type": "number"
+                }
+              },
+              "type": "object"
+            }
+          },
+          "type": "object"
         }
       },
       "required": [

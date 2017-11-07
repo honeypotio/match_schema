@@ -41,6 +41,18 @@
         "start_year": 2003,
         "end_year": 2006
       }
-    ]
+    ],
+    "publicActivity": {
+      "github": {
+        "followerCount": 70,
+        "starCount": 13
+      },
+      "twitter": {
+        "followerCount": 502
+      },
+      "stackoverflow": {
+        "reputation": 6262
+      }
+    }
   }
 }
