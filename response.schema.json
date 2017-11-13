@@ -299,10 +299,10 @@
           "type": "number"
         },
         "personKeywords": {
-          "type": "object"
+          "type": "array"
         },
         "positionKeywords": {
-          "type": "object"
+          "type": "array"
         }
       },
       "required": [
