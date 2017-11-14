@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "additionalProperties": false,
+  "definitions": {
+    "person": {"$ref": "file:schemas/person.json"},
+    "company": {"$ref": "file:schemas/company.json"}
+  },
+  "id": "match_request.json",
+  "properties": {
+    "resume": {
+      "$ref": "#/definitions/person"
+    },
+    "position": {
+      "$ref": "#/definitions/company"
+    }
+  },
+  "required": [
+    "resume",
+    "position"
+  ],
+  "type": "object"
+}
