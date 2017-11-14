@@ -1,0 +1,72 @@
+{
+  "resume": {
+    "id": "e78f3057-8b3a-462e-b257-257d5251ad2b",
+    "refId": "optional reference id",
+    "name": "Hugo Duksis",
+    "summary": "Experienced developer interested in functional programming",
+    "email": "hugo@honeypot.io",
+    "profileUrls": [
+      "https://linkedin.com/in/duksis",
+      "https://github.com/duksis",
+      "https://twitter.com/duksis"
+    ],
+    "resumeUrl": "https://www.dropbox.com/s/pynm2ro69m51i98/HugoDuksisProfile.pdf?dl=1",
+    "skills": ["backbone.js", "react.js", "flux"],
+    "experienceEntries": [
+      {
+        "position": "airbaltic",
+        "description": null,
+        "custom_company": "flight support specialist",
+        "technologies": [],
+        "start_year": 2010,
+        "end_year": 2013
+      },
+      {
+        "position": "accenture",
+        "description": null,
+        "custom_company": "web developer",
+        "technologies": [],
+        "start_year": 2015,
+        "end_year": null
+      }
+    ],
+    "educationEntries":[
+      {
+        "school_name": "TU Berlin",
+        "degree": "Bachelor's Degree",
+        "discipline": "Computer Science",
+        "start_year": 2003,
+        "end_year": 2006
+      }
+    ],
+    "publicActivity": {
+      "github": {
+        "followerCount": 70,
+        "starCount": 13
+      },
+      "twitter": {
+        "followerCount": 502
+      },
+      "stackoverflow": {
+        "reputation": 6262
+      }
+    }
+  },
+  "position": {
+    "name": "Honeypot GmbH",
+    "location": [ "Berlin, Germany" ],
+    "url": "https://www.honeypot.io",
+    "profileUrls": [
+      "https://github.com/honeypotio",
+      "https://linkedin.com/company/honeypot"
+    ],
+    "positions": [
+      {
+        "refId": "optional reference id",
+        "name": "ruby",
+        "description": "4+ years experience with Ruby on Rails and API's",
+        "technologies": ["ruby", "rails", "API"]
+      }
+    ]
+  }
+}
