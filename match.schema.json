@@ -28,6 +28,9 @@
     },
     "positionKeywords": {
       "type": "array"
+    },
+    "keywordImportance": {
+      "type": "array"
     }
   },
   "required": [
