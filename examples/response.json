@@ -15,6 +15,9 @@
       "positionKeywords": [
         {"name": "Ruby", "occurrence": 5},
         {"name": "DevOps", "occurrence": 1}
+      ],
+      "keywordImportance": [
+        {"name": "Ruby", "importance": 0.452}
       ]
     }
   ],
