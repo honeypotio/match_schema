@@ -23,6 +23,20 @@
       "id": "/properties/name",
       "type": "string"
     },
+    "yearsOfXp": {
+      "type": "integer"
+    },
+    "yearsRelevantXp": {
+      "type": "integer"
+    },
+    "requiredTechnologies": {
+      "id": "/properties/requiredTechnologies",
+      "items": {
+        "id": "/properties/requiredTechnologies/items",
+        "type": "string"
+      },
+      "type": "array"
+    },
     "technologies": {
       "id": "/properties/technologies",
       "items": {

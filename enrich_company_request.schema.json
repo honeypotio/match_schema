@@ -1,0 +1,78 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "additionalProperties": false,
+  "definitions": {
+    "company": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "additionalProperties": false,
+      "definitions": {
+      },
+      "id": "company.schema.json",
+      "properties": {
+        "id": {
+          "id": "/properties/id",
+          "type": "string"
+        },
+        "location": {
+          "additionalItems": false,
+          "id": "/properties/location",
+          "items": {
+            "id": "/properties/location/items",
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "name": {
+          "id": "/properties/name",
+          "type": "string"
+        },
+        "profileUrls": {
+          "additionalItems": false,
+          "id": "/properties/profileUrls",
+          "items": {
+            "id": "/properties/profileUrls/items",
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "url": {
+          "id": "/properties/url",
+          "type": "string"
+        },
+        "positions": {
+          "id": "/properties/positions",
+          "items": {
+            "id": "/properties/positions/items",
+            "type": "object"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "name"
+      ],
+      "type": "object"
+    }
+  },
+  "id": "enrich_company_response.schema.json",
+  "properties": {
+    "company": {
+      "$ref": "#/definitions/company"
+    },
+    "match_request_id": {
+      "default": "e63fa057-8b3a-462e-b257-257d5251ad2b",
+      "id": "/properties/match_request_id",
+      "type": "string"
+    },
+    "total_count": {
+      "id": "/properties/total_count",
+      "type": "number"
+    }
+  },
+  "required": [
+    "company",
+    "total_count",
+    "match_request_id"
+  ],
+  "type": "object"
+}
