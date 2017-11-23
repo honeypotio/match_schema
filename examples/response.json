@@ -81,6 +81,8 @@
       "id": "ba2383dbba375cebb69c3d7fafd05c29",
       "refId": "optional reference id",
       "name": "ruby",
+      "requiredTechnologies": ["Ruby"],
+      "technologies": ["API", "Rails"],
       "description": "4+ years experience with Ruby on Rails and API's"
     }
   ],
