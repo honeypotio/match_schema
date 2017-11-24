@@ -16,8 +16,8 @@
         "name": "ruby developer",
         "requiredTechnologies": ["Ruby"],
         "technologies": ["Rails", "API"],
-        "years_of_xp": 3,
-        "years_relevant_xp": 3,
+        "yearsOfXp": 3,
+        "yearsRelevantXp": 3,
         "description": "4+ years experience with Ruby on Rails and API's"
       }
     ]
