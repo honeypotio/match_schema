@@ -83,6 +83,8 @@
       "name": "ruby",
       "requiredTechnologies": ["Ruby"],
       "technologies": ["API", "Rails"],
+      "yearsOfXp": 7,
+      "yearsRelevantXp": 7,
       "description": "4+ years experience with Ruby on Rails and API's"
     }
   ],
