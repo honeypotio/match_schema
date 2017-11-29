@@ -22,6 +22,18 @@
       "minimum": 0,
       "type": "number"
     },
+    "techScore": {
+      "id": "/properties/techScore",
+      "maximum": 1,
+      "minimum": 0,
+      "type": "number"
+    },
+    "expScore": {
+      "id": "/properties/expScore",
+      "maximum": 1,
+      "minimum": 0,
+      "type": "number"
+    },
     "personKeywords": {
       "type": "array"
     },
@@ -30,6 +42,14 @@
     },
     "keywordImportance": {
       "type": "array"
+    },
+    "yearsOfXp": {
+      "id": "/properties/yearsOfXp",
+      "type": "number"
+    },
+    "yearsRelevantXp": {
+      "id": "/properties/yearsRelevantXp",
+      "type": "number"
     }
   },
   "required": [
