@@ -340,6 +340,10 @@
         "yearsRelevantXp": {
           "id": "/properties/yearsRelevantXp",
           "type": "number"
+        },
+        "reliableMatch": {
+          "id": "/properties/reliableMatch",
+          "type": "boolean"
         }
       },
       "required": [
