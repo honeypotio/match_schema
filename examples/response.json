@@ -23,7 +23,8 @@
       ],
       "yearsOfXp": 3,
       "yearsRelevantXp": 3,
-      "reliableMatch": true
+      "reliableMatch": true,
+      "isTech": true
     }
   ],
   "people": [

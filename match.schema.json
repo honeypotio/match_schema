@@ -55,6 +55,10 @@
     "reliableMatch": {
       "id": "/properties/reliableMatch",
       "type": "boolean"
+    },
+    "isTech": {
+      "id": "/properties/isTech",
+      "type": "boolean"
     }
   },
   "required": [
