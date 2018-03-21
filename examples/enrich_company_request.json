@@ -3,6 +3,7 @@
   "total_count": 1,
   "company": {
     "name": "Honeypot GmbH",
+    "refId": "456789876",
     "location": [ "Berlin, Germany" ],
     "url": "https://www.honeypot.io",
     "profileUrls": [

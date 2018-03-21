@@ -204,6 +204,10 @@
           "id": "/properties/id",
           "type": "string"
         },
+        "refId": {
+          "id": "/properties/refId",
+          "type": "string"
+        },
         "location": {
           "additionalItems": false,
           "id": "/properties/location",

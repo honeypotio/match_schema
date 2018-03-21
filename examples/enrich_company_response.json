@@ -4,6 +4,8 @@
   "status": "found",
   "company": {
     "name": "Honeypot GmbH",
+    "id": "234567876543234567",
+    "refId": "optional ref id",
     "location": [ "Berlin, Germany" ],
     "url": "https://www.honeypot.io",
     "profileUrls": [
