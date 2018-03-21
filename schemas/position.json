@@ -19,6 +19,14 @@
       "id": "/properties/name",
       "type": "string"
     },
+    "location": {
+      "id": "/properties/location",
+      "type": "string"
+    },
+    "department": {
+      "id": "/properties/department",
+      "type": "string"
+    },
     "yearsOfXp":{
       "type": "integer"
     },
