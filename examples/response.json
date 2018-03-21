@@ -97,6 +97,7 @@
   "companies": [
     {
       "id": "1277b341ec69285d439f4321544497bb",
+      "refId": "optional ref id",
       "name": "Honeypot GmbH",
       "location": [ "Berlin, Germany" ],
       "url": "https://www.honeypot.io",
