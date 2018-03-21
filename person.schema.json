@@ -172,6 +172,16 @@
         }
       },
       "type": "object"
+    },
+    "meta": {
+      "additionalItems": true,
+      "id": "/properties/meta",
+      "properties": {
+        "source": {
+          "type": "string"
+        }
+      },
+      "type": "object"
     }
   },
   "required": [
