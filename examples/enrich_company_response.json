@@ -14,6 +14,7 @@
     ],
     "positions": [
       {
+        "id": "23a8b975-cb34-4804-b8b1-14c194de9fe4",
         "refId": "optional reference id",
         "name": "ruby developer",
         "requiredTechnologies": ["Ruby"],
