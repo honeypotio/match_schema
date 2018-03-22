@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "additionalProperties": false,
+  "definitions": {
+    "company": {
+      "$ref": "file:schemas/company.json"
+    },
+    "person": {
+      "$ref": "file:schemas/person.json"
+    }
+  },
+  "id": "matcher_request.schema.json",
+  "properties": {
+    "companies": {
+      "additionalItems": false,
+      "items": {
+        "$ref": "#/definitions/company"
+      },
+      "type": "array"
+    },
+    "people": {
+      "items": {
+        "$ref": "#/definitions/person"
+      },
+      "type": "array"
+    },
+    "status": {
+      "default": "fulfilled",
+      "id": "/properties/status",
+      "type": "string"
+    },
+    "id": {
+      "default": "e63fa057-8b3a-462e-b257-257d5251ad2b",
+      "id": "/properties/id",
+      "type": "string"
+    }
+  },
+  "required": [
+    "companies", "status", "people", "id"
+  ],
+  "type": "object"
+}
