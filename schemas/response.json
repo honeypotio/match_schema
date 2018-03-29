@@ -52,6 +52,17 @@
       "default": "fulfilled",
       "id": "/properties/status",
       "type": "string"
+    },
+    "meta": {
+      "additionalProperties": true,
+      "id": "/properties/meta",
+      "properties": {
+        "timestamps": {
+          "id": "/properties/meta/timestamps",
+          "type": "array"
+        }
+      },
+      "type": "object"
     }
   },
   "required": [
